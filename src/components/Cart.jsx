@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { AppContext } from "../App";
+import "./cart.css";
 import axios from "axios";
 export default function Cart() {
   const { user, cart, setCart } = useContext(AppContext);
@@ -50,7 +51,7 @@ export default function Cart() {
   };
 
   return (
-    <div>
+    <div className="abc">
       <h2>My Cart</h2>
       {error}
       {cart &&

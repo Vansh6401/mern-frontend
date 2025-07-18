@@ -1,0 +1,131 @@
+/* Root variables for light & dark mode */
+:root {
+  --bg-gradient: linear-gradient(to right, #ffecd2, #fcb69f);
+  --text-color: #222;
+  --card-bg: #ffffffcc;
+  --btn-gradient: linear-gradient(to right, #667eea, #764ba2);
+  --btn-hover: linear-gradient(to right, #5a67d8, #6b46c1);
+  --accent-gradient: linear-gradient(to right, #f7971e, #ffd200);
+  --accent-hover: linear-gradient(to right, #ff8800, #ffcc00);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-gradient: linear-gradient(to right, #232526, #414345);
+    --text-color: #f1f1f1;
+    --card-bg: #2e2e2ecc;
+    --btn-gradient: linear-gradient(to right, #00c6ff, #0072ff);
+    --btn-hover: linear-gradient(to right, #0072ff, #0052d4);
+    --accent-gradient: linear-gradient(to right, #f7971e, #ffd200);
+    --accent-hover: linear-gradient(to right, #ffcc00, #ffaa00);
+  }
+}
+
+/* Cart Container */
+.abc {
+  min-height: 100vh;
+  background: var(--bg-gradient);
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+.abc h2 {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+}
+
+/* Cart Items */
+.abc li {
+  list-style: none;
+  background: var(--card-bg);
+  border-radius: 14px;
+  padding: 15px 20px;
+  margin: 15px 0;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.abc li:hover {
+  transform: translateY(-3px);
+}
+
+/* Buttons for + and - */
+.abc button {
+  padding: 6px 12px;
+  margin: 0 5px;
+  background: var(--btn-gradient);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.abc button:hover {
+  background: var(--btn-hover);
+}
+
+/* Order Value */
+.abc h5 {
+  margin-top: 30px;
+  font-size: 1.4rem;
+  text-align: right;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Place Order / Login Button */
+.abc p {
+  margin-top: 40px;
+}
+
+.abc p button {
+  padding: 14px 30px;
+  font-size: 1.1rem;
+  background: var(--accent-gradient);
+  color: black;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.abc p button:hover {
+  background: var(--accent-hover);
+}
+
+/* Error Styling */
+.abc .error {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .abc li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .abc h2 {
+    font-size: 2rem;
+  }
+
+  .abc button {
+    margin-top: 8px;
+  }
+}
