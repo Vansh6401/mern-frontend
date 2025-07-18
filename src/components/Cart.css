@@ -1,202 +1,84 @@
 /* Cart.css */
+
+/* Centered container with light gradient and shadow */
 .abc {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  min-height: 100vh;
-  font-family: 'Arial', sans-serif;
-}
-
-.abc h2 {
-  text-align: center;
-  color: white;
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-  font-weight: 700;
-}
-
-.abc li {
-  background: rgba(255, 255, 255, 0.95);
-  margin: 15px 0;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-  /* backdrop-filter: blur(10px); */
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 1.1rem;
-  font-weight: 500;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   color: #333;
-  transition: all 0.3s ease;
 }
 
-.abc li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.abc li button {
-  background: linear-gradient(45deg, #ff6b6b, #ee5a24);
-  color: white;
+li {
+  list-style: none;
+  margin: 15px 0;
+  padding: 15px 20px;
+  border-radius: 12px;
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li span {
+  flex: 1;
+}
+
+li button {
+  padding: 6px 12px;
+  margin: 0 6px;
   border: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  font-size: 1.5rem;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #f093fb, #f5576c);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+li button:hover {
+  transform: scale(1.1);
+}
+
+h5 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  color: #222;
+}
+
+button {
+  display: block;
+  margin: 25px auto 0;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  margin: 0 10px;
 }
 
-.abc li button:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+button:hover {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  transform: translateY(-2px);
 }
 
-.abc li button:active {
-  transform: scale(0.95);
-}
-
-.abc h5 {
-  background: linear-gradient(135deg, #ffeaa7, #fdcb6e);
-  color: #2d3436;
-  padding: 20px;
-  border-radius: 15px;
+p {
   text-align: center;
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin: 30px 0;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-  border: 2px solid rgba(255, 255, 255, 0.3);
-}
-
-.abc p {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.abc p button {
-  background: linear-gradient(135deg, #00b894, #00cec9);
-  color: white;
-  border: none;
-  padding: 15px 40px;
-  border-radius: 50px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.abc p button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 35px rgba(0,0,0,0.3);
-  background: linear-gradient(135deg, #00a085, #00b3a6);
-}
-
-.abc p button:active {
-  transform: translateY(0);
-}
-
-/* Error message styling */
-.abc div:first-of-type {
-  background: linear-gradient(135deg, #ff7675, #e17055);
-  color: white;
-  padding: 15px;
-  border-radius: 10px;
-  margin: 20px 0;
-  text-align: center;
-  font-weight: 600;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .abc {
-    padding: 15px;
-  }
-  
-  .abc h2 {
-    font-size: 2rem;
-  }
-  
-  .abc li {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
-  
-  .abc li button {
-    width: 35px;
-    height: 35px;
-    font-size: 1.2rem;
-  }
-  
-  .abc h5 {
-    font-size: 1.5rem;
-  }
-  
-  .abc p button {
-    padding: 12px 30px;
-    font-size: 1rem;
-  }
-}
-
-/* Animation for cart items */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.abc li {
-  animation: fadeInUp 0.5s ease-out;
-}
-
-/* Glassmorphism effect for better visual appeal */
-.abc::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, 
-    rgba(255,255,255,0.1) 0%, 
-    rgba(255,255,255,0.05) 50%, 
-    rgba(255,255,255,0.1) 100%);
-  pointer-events: none;
-  z-index: -1;
-}
-
-/* Quantity display styling */
-.abc li {
-  position: relative;
-}
-
-.abc li::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
-  height: 3px;
-  background: linear-gradient(90deg, #667eea, #764ba2);
-  border-radius: 2px;
-  opacity: 0.3;
+  margin-top: 20px;
 }
