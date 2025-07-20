@@ -9,7 +9,7 @@
 /* Page title */
 .orders-page h2 {
   text-align: center;
-  color: #1e3a8a;
+  color: rgb(152, 175, 221);
   margin-bottom: 2rem;
 }
 
@@ -20,13 +20,13 @@
   font-size: 1rem;
   margin-bottom: 1.5rem;
   border: 1px solid #ccc;
-  background-color: #fff;
-  color: #333;
+  background-color: rgb(24, 26, 27);
+  color: tan;
 }
 
 /* Order List Item Box */
 .order-item {
-  background: #ffffff;
+  background: rgb(24, 26, 27);;
   border-left: 6px solid #3b82f6; /* blue line */
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -37,7 +37,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  color: #111827;
+  color: tan;
 }
 
 /* Buttons inside orders */
