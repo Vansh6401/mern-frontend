@@ -56,7 +56,7 @@ export default function Orders() {
         {/* <button>Show</button> */}
       </div>
       {orders &&
-        orders.map((order) => (
+        [...orders].reverse().map((order) => (
           <li className="order-item" key={order._id}>
             {order._id}-{order.orderValue}-{order.status}-
             {order.status === "Pending" && (

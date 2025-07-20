@@ -2,7 +2,7 @@
 .orders-page {
   font-family: "Segoe UI", sans-serif;
   padding: 2rem;
-  background: #f3f4f6; /* soft gray */
+  background: rgb(30, 32, 34); /* soft gray */
   min-height: 100vh;
 }
 
