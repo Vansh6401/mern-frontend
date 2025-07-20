@@ -63,7 +63,7 @@
 }
 
 /* Table styles */
-table {
+.order-card table {
   width: 100%;
   margin-top: 1rem;
   border-collapse: collapse;
@@ -73,16 +73,18 @@ table {
   overflow: hidden;
 }
 
-th, td {
+.order-card th,
+.order-card td {
   padding: 0.75rem 1rem;
   text-align: center;
   border-bottom: 1px solid #ddd;
 }
 
-thead {
+.order-card thead {
   background-color: #e2e8f0;
   color: #1a202c;
 }
+
 
 /* Optional: Add date styling if you show order date */
 .order-date {
