@@ -1,34 +1,49 @@
+/* Page Background */
 .order-page {
   background-color: #ffffff;
   padding: 2rem;
   min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Heading */
+.order-page h3 {
+  font-size: 2rem;
+  color: #1f2937;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Order Card */
 .order-card {
-  background-color: #f3f4f6;
+  background-color: #f3f4f6; /* light gray */
   border: 1px solid #e0e0e0;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
-  transition: transform 0.2s ease;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
 }
 
 .order-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
 }
 
-.order-card h3,
+/* Text inside card */
 .order-card p {
   color: #1f2937;
+  font-size: 1rem;
   margin: 0.5rem 0;
 }
 
+/* Status badge styles */
 .status {
-  padding: 0.3rem 0.8rem;
-  border-radius: 20px;
+  padding: 0.35rem 0.9rem;
+  border-radius: 30px;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  display: inline-block;
+  margin-left: 5px;
   text-transform: capitalize;
 }
 
@@ -45,4 +60,33 @@
 .status.cancelled {
   background-color: #fee2e2;
   color: #b91c1c;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+thead {
+  background-color: #e2e8f0;
+  color: #1a202c;
+}
+
+/* Optional: Add date styling if you show order date */
+.order-date {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
 }
