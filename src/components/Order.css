@@ -1,0 +1,84 @@
+/* Order Page Container */
+.order-page {
+  padding: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+}
+
+/* Each Order Card */
+.order-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: transform 0.3s ease;
+}
+
+.order-card:hover {
+  transform: scale(1.01);
+}
+
+/* Headings and Status */
+.order-card h3 {
+  margin-bottom: 12px;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* Status Color Classes */
+.status.pending {
+  background-color: #ff9800;
+  color: white;
+}
+.status.completed {
+  background-color: #4caf50;
+  color: white;
+}
+.status.cancelled {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Table Styling */
+.order-card table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  color: #ddd;
+}
+
+.order-card th,
+.order-card td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.order-card th {
+  background-color: rgba(255, 255, 255, 0.05);
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.order-card td {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+.order-page h3 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

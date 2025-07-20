@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useContext } from "react";
 import { AppContext } from "../App";
+import "./Order.css";
 export default function Order() {
   const API_URL = import.meta.env.VITE_API_URL;
   const { user } = useContext(AppContext);
@@ -23,14 +24,14 @@ export default function Order() {
   }, []);
 
   return (
-    <div>
+    <div className="order-page">
       <h3>My Orders</h3>
       {orders &&
         orders.map((order) => (
-          <div>
+          <div className="order-card" key={order._id}>
             <p>OrderId:{order._id}</p>
             <p>Order Value: {order.orderValue} </p>
-            <p>Status:{order.status}</p>
+            <p>Status: <span className={`status ${order.status.toLowerCase()}`}>{order.status}</span></p>
             <table border="1">
               <thead>
                 <tr>
