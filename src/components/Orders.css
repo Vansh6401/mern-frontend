@@ -1,0 +1,77 @@
+.orders-page {
+  font-family: "Segoe UI", sans-serif;
+  padding: 2rem;
+  background: #f1f5f9;
+  min-height: 100vh;
+}
+
+.orders-page h2 {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 1.5rem;
+}
+
+.orders-page select {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid #cbd5e1;
+}
+
+.order-item {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-left: 6px solid #3b82f6;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.order-item button {
+  margin-left: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #3b82f6;
+  transition: background 0.3s;
+}
+
+.order-item button:hover {
+  background-color: #2563eb;
+}
+
+.order-item button:first-of-type {
+  background-color: #ef4444;
+}
+
+.order-item button:first-of-type:hover {
+  background-color: #dc2626;
+}
+
+.orders-page > div > button {
+  padding: 0.5rem 1rem;
+  margin: 1rem 0.3rem;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.orders-page > div > button:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.orders-page > div > button:hover:not(:disabled) {
+  background-color: #1d4ed8;
+}

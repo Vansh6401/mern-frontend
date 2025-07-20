@@ -3,6 +3,7 @@ import axios from "axios";
 import { useContext } from "react";
 import { AppContext } from "../App";
 import { useFetcher } from "react-router-dom";
+import "./Orders.css"
 export default function Orders() {
   const [orders, setOrders] = useState([]);
   const [error, setError] = useState();
@@ -41,7 +42,7 @@ export default function Orders() {
     }
   };
   return (
-    <div>
+    <div className="orders-page">
       <h2>Order Management</h2>
       <div>
         <select onChange={(e) => setStatus(e.target.value)}>
@@ -56,7 +57,7 @@ export default function Orders() {
       </div>
       {orders &&
         orders.map((order) => (
-          <li>
+          <li className="order-item" key={order._id}>
             {order._id}-{order.orderValue}-{order.status}-
             {order.status === "Pending" && (
               <>
