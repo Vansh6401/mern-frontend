@@ -1,84 +1,55 @@
-/* Cart.css */
-
-/* Centered container with light gradient and shadow */
-.abc {
-  max-width: 700px;
+.cart-container {
+  max-width: 800px;
   margin: 40px auto;
   padding: 30px;
-  border-radius: 20px;
-  background: linear-gradient(135deg, #e0eafc, #cfdef3);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  color: #333;
+  background: linear-gradient(145deg, #1c1c2b, #222238);
+  border-radius: 16px;
+  color: #f0f0f0;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+  font-family: 'Segoe UI', sans-serif;
 }
 
-h2 {
-  font-size: 32px;
-  margin-bottom: 30px;
+.cart-container h2,
+.cart-container h5 {
   text-align: center;
-  background: linear-gradient(90deg, #4facfe, #00f2fe);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #00d4ff;
+  margin-bottom: 20px;
 }
 
-li {
+.cart-container li {
   list-style: none;
-  margin: 15px 0;
-  padding: 15px 20px;
-  border-radius: 12px;
-  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.05);
+  margin-bottom: 12px;
+  padding: 12px 16px;
+  border-radius: 10px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  transition: background 0.3s ease;
 }
 
-li span {
-  flex: 1;
+.cart-container li:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
 
-li button {
-  padding: 6px 12px;
+.cart-container button {
   margin: 0 6px;
+  padding: 6px 12px;
+  background: #00d4ff;
+  color: #000;
   border: none;
   border-radius: 6px;
-  background: linear-gradient(90deg, #f093fb, #f5576c);
-  color: white;
   font-weight: bold;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s, background 0.3s;
 }
 
-li button:hover {
-  transform: scale(1.1);
+.cart-container button:hover {
+  background: #00b8e6;
+  transform: scale(1.05);
 }
 
-h5 {
+.cart-container p {
   text-align: center;
   margin-top: 30px;
-  font-size: 20px;
-  color: #222;
-}
-
-button {
-  display: block;
-  margin: 25px auto 0;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 8px;
-  background: linear-gradient(to right, #00c6ff, #0072ff);
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-button:hover {
-  background: linear-gradient(to right, #0072ff, #00c6ff);
-  transform: translateY(-2px);
-}
-
-p {
-  text-align: center;
-  margin-top: 20px;
 }

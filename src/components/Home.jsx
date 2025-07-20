@@ -28,6 +28,7 @@
 // }
 
 import { useState } from "react";
+import "./Home.css"
 export default function Home() {
   const [wicket, setWicket] = useState(0);
   const [run, setRun] = useState(0);
@@ -48,13 +49,23 @@ export default function Home() {
   };
 
   return (
-    <>
-      <button onClick={incrementRun}>Run</button>
-      <h3>{run}</h3>
-      <button onClick={incrementWicket}>Wicket</button>
-      <h3>{wicket}</h3>
+
+    <div className="home-container">
+      <button className="home-button" onClick={incrementRun}>Run</button>
+      <h3 className="score">Runs: {run}</h3>
+      <button className="home-button" onClick={incrementWicket}>Wicket</button>
+      <h3 className="score">Wickets: {wicket}</h3>
       <hr />
-      {message}
-    </>
+      <p className="message">{message}</p>
+    </div>
+
+    // <>
+    //   <button onClick={incrementRun}>Run</button>
+    //   <h3>{run}</h3>
+    //   <button onClick={incrementWicket}>Wicket</button>
+    //   <h3>{wicket}</h3>
+    //   <hr />
+    //   {message}
+    // </>
   );
 }
