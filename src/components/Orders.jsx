@@ -8,7 +8,7 @@ export default function Orders() {
   const [orders, setOrders] = useState([]);
   const [error, setError] = useState();
   const [page, setPage] = useState(1);
-  const [limit,setLimit]= useState(3)
+  const [limit,setLimit]= useState(20)
   const [totalPages, setTotalPages] = useState(1);
   const [status, setStatus] = useState("");
   const { user } = useContext(AppContext);
