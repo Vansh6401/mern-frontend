@@ -1,0 +1,144 @@
+.products-page {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f7f9fc;
+  color: #333;
+  padding: 20px;
+}
+
+.products-page h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  background: linear-gradient(to right, #e3f2fd, #fce4ec);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.products-page form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px auto;
+  max-width: 800px;
+}
+
+.products-page form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 200px;
+}
+
+.products-page form button {
+  padding: 10px 20px;
+  border: none;
+  background: #1976d2;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.products-page form button:hover {
+  background: #0d47a1;
+}
+
+.products-page table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+.products-page th,
+.products-page td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.products-page th {
+  background: #f1f1f1;
+  color: #444;
+  font-weight: bold;
+}
+
+.products-page td button {
+  margin: 0 5px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.products-page td button:hover {
+  opacity: 0.85;
+}
+
+.products-page td button:first-child {
+  background: #ffca28;
+  color: #000;
+}
+
+.products-page td button:last-child {
+  background: #ef5350;
+  color: white;
+}
+
+.products-page > div > input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 10px;
+  border-radius: 6px;
+  width: 200px;
+}
+
+.products-page > div > button {
+  padding: 10px 16px;
+  background: #4caf50;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.products-page > div > button:hover {
+  background: #388e3c;
+}
+
+.products-page .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  gap: 15px;
+}
+
+.products-page .pagination button {
+  padding: 10px 20px;
+  border: none;
+  background: #00bcd4;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.products-page .pagination button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.products-page .pagination span {
+  font-weight: bold;
+}
