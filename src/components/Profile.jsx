@@ -50,6 +50,13 @@ export default function Profile() {
       <div class="floating-food">🍔</div>
       <div class="floating-food">🍟</div>
       <div class="floating-food">🍩</div>
+      <div class="floating-food">🍿</div>
+      <div class="floating-food">🥪</div>
+      <div class="floating-food">🥗</div>
+      <div class="floating-food">🍣</div>
+      <div class="floating-food">🧁</div>
+      <div class="floating-food">🍦</div>
+
 
       <div className="profile-card">
       <h3>My Profile</h3>
