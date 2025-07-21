@@ -46,6 +46,11 @@ export default function Profile() {
   };
   return (
     <div className="profile-container">
+      <div class="floating-food">🍕</div>
+      <div class="floating-food">🍔</div>
+      <div class="floating-food">🍟</div>
+      <div class="floating-food">🍩</div>
+
       <div className="profile-card">
       <h3>My Profile</h3>
       {error && <p className="error">{error}</p>}
