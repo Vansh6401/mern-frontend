@@ -13,7 +13,6 @@ html, body {
   padding: 40px 20px;
   box-sizing: border-box;
 }
-
 /* Full background */
 /* .App-Login-Row {
   background: linear-gradient(196deg, rgba(18, 6, 64, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
@@ -25,17 +24,33 @@ html, body {
   padding: 30px;
 } */
 
-/* Centered card */
+
 .login-form-card {
   background-color: #ffffff;
-  padding: 50px 40px; /* increased padding */
+  padding: 40px 30px;
+  width: 360px; /* Reduced width to make it closer to height */
+  height: 420px; /* Fixed height for square-like shape */
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ddd;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Centered card */
+/* .login-form-card {
+  background-color: #ffffff;
+  padding: 50px 40px;
   width: 100%;
-  max-width: 500px; /* increased width */
+  max-width: 500px;
   border-radius: 14px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
   border: 1px solid #ddd;
   text-align: center;
-}
+} */
 
 /* Heading */
 .login-form-card h2 {
