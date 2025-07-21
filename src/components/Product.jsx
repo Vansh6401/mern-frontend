@@ -28,7 +28,7 @@ export default function Product() {
       setCart([...cart, product]);
     }
   };
-
+return(
  <div className="product-page">
   <div className="product-grid">
     {products &&
@@ -60,5 +60,5 @@ export default function Product() {
 //           </div>
 //         ))}
 //     </div>
-//   );
+  );
 }
