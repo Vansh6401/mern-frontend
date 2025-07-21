@@ -1,128 +1,94 @@
-.orders-page {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: #f7f9fc;
-  color: #333;
-  padding: 20px;
+/* Page Background */
+.order-page {
+  background-color: #ffffff;
+  padding: 2rem;
   min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Heading */
-.orders-page h3 {
-  text-align: center;
+.order-page h3 {
   font-size: 2rem;
-  color: #2c3e50;
-  background: linear-gradient(to right, #e3f2fd, #fce4ec);
-  padding: 1rem;
-  border-radius: 10px;
-  margin-bottom: 30px;
+  color: #1f2937;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 /* Order Card */
 .order-card {
-  background: #ffffff;
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  max-width: 900px;
+  background-color: #f3f4f6; /* light gray */
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease;
 }
 
 .order-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
 }
 
-/* Order Info Text */
+/* Text inside card */
 .order-card p {
+  color: #1f2937;
   font-size: 1rem;
-  margin: 8px 0;
-  color: #333;
+  margin: 0.5rem 0;
 }
 
-/* Order Date */
-.order-date {
-  font-size: 0.9rem;
-  color: #555;
-  margin-bottom: 10px;
-}
-
-/* Table Styles */
-.order-card table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
-}
-
-.order-card th,
-.order-card td {
-  padding: 12px;
-  border-bottom: 1px solid #eee;
-  text-align: center;
-}
-
-.order-card thead {
-  background-color: #f1f1f1;
-  color: #444;
-  font-weight: bold;
-}
-
-/* Status Badges */
+/* Status badge styles */
 .status {
-  display: inline-block;
-  padding: 6px 12px;
-  font-size: 0.85rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 30px;
   font-weight: 600;
-  border-radius: 20px;
+  font-size: 0.85rem;
+  display: inline-block;
+  margin-left: 5px;
   text-transform: capitalize;
 }
 
 .status.pending {
-  background-color: #fff3cd;
-  color: #856404;
+  background-color: #fef3c7;
+  color: #b45309;
 }
 
 .status.completed {
-  background-color: #d4edda;
-  color: #155724;
+  background-color: #dcfce7;
+  color: #15803d;
 }
 
 .status.cancelled {
-  background-color: #f8d7da;
-  color: #721c24;
+  background-color: #fee2e2;
+  color: #b91c1c;
 }
 
-/* Pagination */
-.orders-pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px 0;
-  gap: 15px;
-}
-
-.orders-pagination button {
-  padding: 10px 20px;
-  border: none;
-  background: #00bcd4;
-  color: white;
+/* Table styles */
+.order-card table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  background-color: #ffffff;
   border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+  overflow: hidden;
 }
 
-.orders-pagination button:hover {
-  background: #0097a7;
+.order-card th,
+.order-card td {
+  padding: 0.75rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
 }
 
-.orders-pagination button:disabled {
-  background: #ccc;
-  cursor: not-allowed;
+.order-card thead {
+  background-color: #e2e8f0;
+  color: #1a202c;
 }
 
-.orders-pagination span {
-  font-weight: bold;
+
+/* Optional: Add date styling if you show order date */
+.order-date {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
 }
