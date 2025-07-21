@@ -17,36 +17,36 @@
   margin-bottom: 30px;
 }
 
-/* Order card styling */
+/* Order Card */
 .order-card {
   background: #ffffff;
   padding: 20px;
   margin: 20px auto;
   border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   max-width: 900px;
-  transition: 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .order-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
 }
 
-/* Order info text */
+/* Order Info Text */
 .order-card p {
   font-size: 1rem;
   margin: 8px 0;
-  color: #1f2937;
+  color: #333;
 }
 
-/* Order date */
+/* Order Date */
 .order-date {
   font-size: 0.9rem;
-  color: #6b7280;
+  color: #555;
   margin-bottom: 10px;
 }
 
-/* Order table */
+/* Table Styles */
 .order-card table {
   width: 100%;
   border-collapse: collapse;
@@ -60,17 +60,17 @@
 .order-card th,
 .order-card td {
   padding: 12px;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #eee;
   text-align: center;
 }
 
 .order-card thead {
-  background-color: #e2e8f0;
-  color: #1a202c;
+  background-color: #f1f1f1;
+  color: #444;
   font-weight: bold;
 }
 
-/* Status badge styling */
+/* Status Badges */
 .status {
   display: inline-block;
   padding: 6px 12px;
@@ -81,26 +81,26 @@
 }
 
 .status.pending {
-  background-color: #fef3c7;
-  color: #b45309;
+  background-color: #fff3cd;
+  color: #856404;
 }
 
 .status.completed {
-  background-color: #dcfce7;
-  color: #15803d;
+  background-color: #d4edda;
+  color: #155724;
 }
 
 .status.cancelled {
-  background-color: #fee2e2;
-  color: #b91c1c;
+  background-color: #f8d7da;
+  color: #721c24;
 }
 
-/* Pagination (optional if needed) */
+/* Pagination */
 .orders-pagination {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin: 30px 0;
   gap: 15px;
 }
 
@@ -112,6 +112,10 @@
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s ease;
+}
+
+.orders-pagination button:hover {
+  background: #0097a7;
 }
 
 .orders-pagination button:disabled {
