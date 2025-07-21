@@ -11,14 +11,13 @@
 .order-page h3 {
   text-align: center;
   font-size: 2rem;
-  color: #ffffff;
-  background: linear-gradient(to right, #667eea, #764ba2);
+  color: #2c3e50;
+  background: linear-gradient(to right, #dbeafe, #e0e7ff);
   padding: 1rem;
   border-radius: 10px;
   margin-bottom: 30px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
-
 
 /* Order Card Container */
 .order-card {
