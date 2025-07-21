@@ -43,7 +43,42 @@ export default function Profile() {
       console.log(err);
       setError("Something went wrong");
     }
+
+
+    //I have added
+    useEffect(() => {
+  const foods = ["🍕", "🍔", "🍟", "🍩", "🍿", "🥪", "🥗", "🍣", "🧁", "🍦"];
+
+  const handleMouseMove = (e) => {
+    const emoji = document.createElement("div");
+    emoji.textContent = foods[Math.floor(Math.random() * foods.length)];
+    emoji.style.position = "fixed";
+    emoji.style.left = `${e.clientX}px`;
+    emoji.style.top = `${e.clientY}px`;
+    emoji.style.fontSize = "1.5rem";
+    emoji.style.zIndex = "9999";
+    emoji.style.pointerEvents = "none";
+    emoji.style.opacity = "0.9";
+    emoji.style.transition = "transform 1s ease, opacity 1s ease";
+    document.body.appendChild(emoji);
+
+    requestAnimationFrame(() => {
+      emoji.style.transform = "translateY(-30px)";
+      emoji.style.opacity = "0";
+    });
+
+    setTimeout(() => {
+      document.body.removeChild(emoji);
+    }, 1000);
   };
+
+  window.addEventListener("mousemove", handleMouseMove);
+  return () => window.removeEventListener("mousemove", handleMouseMove);
+}, []);
+ //upto here
+  };
+
+
   return (
     <div className="profile-container">
       <div class="floating-food">🍕</div>
