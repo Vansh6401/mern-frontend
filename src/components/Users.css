@@ -1,0 +1,122 @@
+/* Background and page setup */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.users-container {
+  min-height: 100vh;
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+  color: #ffffff;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading */
+.users-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #00ffe7;
+}
+
+/* Form styling */
+.users-container form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00ffe7;
+}
+
+.users-container input,
+.users-container select {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background: #2e2e3a;
+  color: white;
+  width: 180px;
+  transition: 0.3s ease;
+}
+
+.users-container input:focus,
+.users-container select:focus {
+  box-shadow: 0 0 8px #00ffe7;
+}
+
+/* Buttons */
+.users-container button {
+  padding: 10px 16px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  background: #00ffe7;
+  color: #000;
+  transition: 0.3s ease;
+}
+
+.users-container button:hover {
+  background: #fff;
+  color: #000;
+  box-shadow: 0 0 8px #00ffe7;
+}
+
+/* Search input and button */
+.users-container > div:nth-child(3) {
+  margin: 20px 0;
+}
+
+/* Table styles */
+.users-container table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.users-container th,
+.users-container td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.users-container th {
+  background: #121212;
+  color: #00ffe7;
+}
+
+.users-container td {
+  color: white;
+}
+
+/* Pagination */
+.users-container > div:last-child {
+  margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .users-container form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .users-container input,
+  .users-container select {
+    width: 90%;
+  }
+}

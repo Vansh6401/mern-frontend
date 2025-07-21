@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { useContext } from "react";
 import { AppContext } from "../App";
 import axios from "axios";
+import "./Users.css"
 export default function Users() {
   const [users, setUsers] = useState([]);
   const { user } = useContext(AppContext);
@@ -137,7 +138,7 @@ export default function Users() {
     });
   };
   return (
-    <div>
+    <div className="users-container">
       <h2>User Management</h2>
       {error}
       <div>
