@@ -1,92 +1,94 @@
-/* Entire page background */
-.orders-page {
-  font-family: "Segoe UI", sans-serif;
+/* Page Background */
+.order-page {
+  background-color: #f9f9f9;
   padding: 2rem;
-  background: rgb(30, 32, 34); /* soft gray */
   min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Page title */
-.orders-page h2 {
-  text-align: center;
-  color: rgb(152, 175, 221);
+/* Heading */
+.order-page h3 {
+  font-size: 2rem;
+  color: #1f2937;
   margin-bottom: 2rem;
-}
-
-/* Status Filter Dropdown */
-.orders-page select {
-  padding: 0.6rem 1rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-  border: 1px solid #ccc;
-  background-color: rgb(24, 26, 27);
-  color: tan;
-}
-
-/* Order List Item Box */
-.order-item {
-  background: rgb(24, 26, 27);;
-  border-left: 6px solid #3b82f6; /* blue line */
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  font-size: 0.95rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  color: tan;
-}
-
-/* Buttons inside orders */
-.order-item button {
-  margin-left: 0.5rem;
-  padding: 0.4rem 0.8rem;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  color: #fff;
-  background-color: #3b82f6;
-  transition: background 0.3s;
-}
-
-.order-item button:hover {
-  background-color: #2563eb;
-}
-
-/* Cancel button (first of type) */
-.order-item button:first-of-type {
-  background-color: #ef4444;
-}
-
-.order-item button:first-of-type:hover {
-  background-color: #dc2626;
-}
-
-/* Pagination Section */
-.orders-page > div:last-child {
-  margin-top: 2rem;
   text-align: center;
 }
 
-.orders-page > div:last-child button {
-  padding: 0.5rem 1.2rem;
-  margin: 0 0.5rem;
-  background-color: #1e3a8a;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s;
+/* Order Card */
+.order-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease-in-out;
 }
 
-.orders-page > div:last-child button:disabled {
-  background-color: #9ca3af;
-  cursor: not-allowed;
+.order-card:hover {
+  transform: translateY(-4px);
 }
 
-.orders-page > div:last-child button:hover:not(:disabled) {
-  background-color: #2563eb;
+/* Text inside card */
+.order-card p {
+  color: #374151;
+  font-size: 1rem;
+  margin: 0.4rem 0;
+}
+
+/* Status badge styles */
+.status {
+  padding: 0.3rem 0.8rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: inline-block;
+  margin-left: 6px;
+  text-transform: capitalize;
+}
+
+.status.pending {
+  background-color: #fef9c3;
+  color: #92400e;
+}
+
+.status.completed {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.status.cancelled {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+/* Table styles */
+.order-card table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.04);
+}
+
+.order-card th,
+.order-card td {
+  padding: 0.75rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.order-card thead {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+/* Optional: Date styling */
+.order-date {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
 }
