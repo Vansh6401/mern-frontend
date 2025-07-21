@@ -10,7 +10,7 @@ export default function Product() {
   const fetchProducts = async () => {
     try {
       // const url = `${API_URL}/api/products/all`;
-      const url = `${API_URL}/api/products/all?page=1&limit=16`;
+      const url = `${API_URL}/api/products/all?page=1&limit=12`;
       const result = await axios.get(url);
       setProducts(result.data.products);
     } catch (err) {
