@@ -7,7 +7,7 @@ export default function Header() {
   const { user } = useContext(AppContext);
   return (
     <div className="navbar">
-      <h1 className="navbar-logo" >MERN Frontend</h1>
+      <h1 className="navbar-logo" >ORDERit UP</h1>
       <nav className="navbar-links">
       <Link to="/">Home</Link>
       <Link to="/cart">MyCart</Link>
