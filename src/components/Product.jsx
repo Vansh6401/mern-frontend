@@ -29,22 +29,21 @@ export default function Product() {
     }
   };
 
-  return (
   <div className="product-page">
-    <div className="product-grid">
-      {products &&
-        products.map((product) => (
-          <div className="product-card" key={product._id}>
-            <img src={product.imgUrl} width={100} className="product-img" />
-            <h3 className="product-title">{product.productName}</h3>
-            <p className="product-desc">{product.description}</p>
-            <h4 className="product-price">₹{product.price}</h4>
-            <button className="add-cart-btn" onClick={() => addToCart(product)}>Add to Cart</button>
-          </div>
-        ))}
-    </div>
+  <div className="product-grid">
+    {products &&
+      products.map((product) => (
+        <div className="product-card" key={product._id}>
+          <img src={product.imgUrl} className="product-img" />
+          <h3 className="product-title">{product.productName}</h3>
+          <p className="product-desc">{product.description}</p>
+          <h4 className="product-price">₹{product.price}</h4>
+          <button className="add-cart-btn" onClick={() => addToCart(product)}>Add to Cart</button>
+        </div>
+      ))}
   </div>
-);
+</div>
+
 
 
   
