@@ -1,3 +1,17 @@
+/* Section title */
+.product-heading {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  padding: 1.5rem 0;
+  background: linear-gradient(to right, #f9f9f9, #d6e4f0);
+  color: #3a4d63;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+
+/* Existing container styles */
 .product-page {
   min-height: 100vh;
   padding: 2rem;
@@ -12,12 +26,12 @@
   gap: 2rem;
 }
 
-/* Modern clean card */
+/* Modern product card */
 .product-card {
   background: #ffffff;
   border-radius: 20px;
   padding: 1.5rem;
-  height: 520px; /* increased height */
+  height: 520px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,13 +43,11 @@
   text-align: center;
 }
 
-/* Hover animation */
 .product-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Slight gradient on hover */
 .product-card:hover::before {
   content: '';
   position: absolute;
@@ -58,7 +70,7 @@
 }
 
 .product-title {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 600;
   color: #222;
   margin-bottom: 0.5rem;
@@ -73,29 +85,32 @@
 }
 
 .product-price {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: #2c6e91;
   z-index: 1;
 }
 
+/* 🔘 Updated Add to Cart button */
 .add-cart-btn {
-  padding: 0.6rem 1.2rem;
-  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
   color: #333;
   border: none;
-  border-radius: 12px;
+  border-radius: 10px;
   font-weight: 600;
+  font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
   z-index: 1;
+  width: 100%;
 }
 
 .add-cart-btn:hover {
-  background: linear-gradient(to right, #c2e9fb, #a1c4fd);
+  background: linear-gradient(to right, #fcb69f, #ffecd2);
 }
 
-/* Responsive Design */
+/* Responsive layout */
 @media (max-width: 1200px) {
   .product-grid {
     grid-template-columns: repeat(3, 1fr);
