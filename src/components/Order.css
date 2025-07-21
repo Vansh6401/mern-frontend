@@ -1,94 +1,127 @@
-/* Page Background */
+/* Page Wrapper */
 .order-page {
-  background-color: #ffffff;
-  padding: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f7f9fc;
+  color: #333;
+  padding: 20px;
   min-height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Heading */
+/* Header */
 .order-page h3 {
-  font-size: 2rem;
-  color: #1f2937;
-  margin-bottom: 2rem;
   text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  background: linear-gradient(to right, #c8e6c9, #f0f4c3);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 30px;
 }
 
-/* Order Card */
+/* Order Card Container */
 .order-card {
-  background-color: #f3f4f6; /* light gray */
-  border: 1px solid #e0e0e0;
+  background: white;
   border-radius: 12px;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  margin-bottom: 30px;
+  transition: transform 0.2s ease;
 }
 
 .order-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
 }
 
-/* Text inside card */
+/* Order Info Text */
 .order-card p {
-  color: #1f2937;
   font-size: 1rem;
   margin: 0.5rem 0;
+  color: #374151;
 }
 
-/* Status badge styles */
+/* Status Badges */
 .status {
-  padding: 0.35rem 0.9rem;
-  border-radius: 30px;
-  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 20px;
   font-size: 0.85rem;
-  display: inline-block;
-  margin-left: 5px;
+  font-weight: bold;
   text-transform: capitalize;
+  display: inline-block;
+  margin-left: 10px;
 }
 
 .status.pending {
-  background-color: #fef3c7;
-  color: #b45309;
+  background-color: #fff3cd;
+  color: #856404;
 }
 
 .status.completed {
-  background-color: #dcfce7;
-  color: #15803d;
+  background-color: #d4edda;
+  color: #155724;
 }
 
 .status.cancelled {
-  background-color: #fee2e2;
-  color: #b91c1c;
+  background-color: #f8d7da;
+  color: #721c24;
 }
 
-/* Table styles */
+/* Order Table */
 .order-card table {
   width: 100%;
   margin-top: 1rem;
   border-collapse: collapse;
-  font-size: 0.95rem;
-  background-color: #ffffff;
+  background: #fff;
   border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.03);
 }
 
 .order-card th,
 .order-card td {
-  padding: 0.75rem 1rem;
+  padding: 12px 15px;
   text-align: center;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #eee;
 }
 
-.order-card thead {
-  background-color: #e2e8f0;
-  color: #1a202c;
+.order-card th {
+  background: #f1f1f1;
+  color: #444;
+  font-weight: bold;
 }
 
-
-/* Optional: Add date styling if you show order date */
+/* Optional: Date styling */
 .order-date {
   font-size: 0.9rem;
-  color: #6b7280;
+  color: #6c757d;
   margin-bottom: 0.5rem;
+}
+
+/* Divider line */
+.order-card hr {
+  margin-top: 1.5rem;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+/* Pagination (if needed) */
+.order-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 30px 0;
+}
+
+.order-pagination button {
+  padding: 10px 20px;
+  background: #00bcd4;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.order-pagination button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
 }
