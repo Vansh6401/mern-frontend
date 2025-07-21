@@ -46,14 +46,16 @@ export default function Profile() {
   };
   return (
     <div className="profile-container">
+      <div className="profile-card">
       <h3>My Profile</h3>
-      <button className="logout-btn" onClick={logout}>Logout</button>
+      {error && <p className="error">{error}</p>}
       <p>
         <input
           name="firstName"
           type="text"
           onChange={handleChange}
           defaultValue={profile.firstName}
+          placeholder="First Name"
         />
       </p>
       <p>
@@ -62,6 +64,7 @@ export default function Profile() {
           type="text"
           onChange={handleChange}
           defaultValue={profile.lastName}
+          placeholder="Last Name"
         />
       </p>
       <p>
@@ -70,6 +73,7 @@ export default function Profile() {
           type="text"
           onChange={handleChange}
           defaultValue={profile.email}
+          placeholder="Email"
         />
       </p>
       <p>
@@ -78,9 +82,12 @@ export default function Profile() {
           type="password"
           onChange={handleChange}
           defaultValue={profile.password}
+          placeholder="Password"
         />
       </p>
-      <button onClick={handleSubmit}>Update Profile</button>
+      <button className="update-btn" onClick={handleSubmit}>Update Profile</button>
+      <button className="logout-btn" onClick={logout}>Logout</button>
     </div>
+  </div>
   );
 }
