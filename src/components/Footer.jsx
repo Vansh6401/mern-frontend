@@ -27,7 +27,7 @@ export default function Footer() {
 
         <div>
           <h4>Contact</h4>
-          <p>Email: support@mernshop.com</p>
+          <p>Email: ORDERitUP@gmail.com</p>
           <p>Phone: +91 9876543210</p>
         </div>
 
