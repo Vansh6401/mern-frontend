@@ -49,7 +49,7 @@
   color: #00d4ff;
 }
 
-.social-icons a {
+/* .social-icons a {
   font-size: 20px;
   margin-right: 12px;
   color: #f0f0f0;
@@ -58,7 +58,7 @@
 
 .social-icons a:hover {
   color: #00d4ff;
-}
+} */
 
 .footer-bottom {
   text-align: center;
@@ -74,4 +74,21 @@
   border-radius: 50%; /* Make it circular */
   object-fit: cover; /* Crop if needed */
   margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
 }
