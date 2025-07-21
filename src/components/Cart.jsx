@@ -51,7 +51,8 @@ export default function Cart() {
   };
 
   return (
-    <div className="cart-container">
+    <div className="cart-wrapper">
+      <div className="cart-container">
       <h2>My Cart</h2>
       {error}
       {cart &&
@@ -79,6 +80,7 @@ export default function Cart() {
           <button onClick={() => Navigate("/login")}>Login to Order</button>
         )}
       </p>
+    </div>
     </div>
   );
 }
