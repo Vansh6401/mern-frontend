@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-top">
         <img
-          src="/logo.png"
+          src="/Logo.png"
           alt="ORDERitUP Logo"
           className="footer-logo"
         />
