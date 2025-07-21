@@ -1,6 +1,48 @@
 .navbar {
   background: linear-gradient(145deg, #141e30, #243b55);
   color: #f0f0f0;
+  padding: 30px 40px; /* Increased padding */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 3px solid #00d4ff; /* Slightly bolder border */
+  font-family: 'Segoe UI', sans-serif;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  font-size: 32px; /* Increased from 24px */
+  color: #00d4ff;
+  margin: 0;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 18px; /* Increased from default */
+  padding: 10px 16px; /* More clickable area */
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  background: #00d4ff;
+  color: #000;
+}
+
+
+/* .navbar {
+  background: linear-gradient(145deg, #141e30, #243b55);
+  color: #f0f0f0;
   padding: 20px 30px;
   display: flex;
   align-items: center;
@@ -35,4 +77,4 @@
 .navbar-links a:hover {
   background: #00d4ff;
   color: #000;
-}
+} */
