@@ -1,5 +1,5 @@
-/* Page wrapper */
-.order-page {
+/* Orders Page Container */
+.orders-page {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: #f7f9fc;
   color: #333;
@@ -7,8 +7,8 @@
   min-height: 100vh;
 }
 
-/* Header */
-.order-page h3 {
+/* Page Heading */
+.orders-page h2 {
   text-align: center;
   font-size: 2rem;
   color: #2c3e50;
@@ -18,87 +18,89 @@
   margin-bottom: 30px;
 }
 
-/* Order card container */
-.order-card {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
-  padding: 20px;
-  margin-bottom: 30px;
-  transition: transform 0.2s ease;
-}
-
-.order-card:hover {
-  transform: translateY(-4px);
-}
-
-/* Order info */
-.order-card p {
-  font-size: 1rem;
-  margin: 0.5rem 0;
-  color: #374151;
-}
-
-/* Status badges */
-.status {
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: bold;
-  text-transform: capitalize;
-  display: inline-block;
-  margin-left: 10px;
-}
-
-.status.pending {
-  background-color: #fff3cd;
-  color: #856404;
-}
-
-.status.completed {
-  background-color: #d4edda;
-  color: #155724;
-}
-
-.status.cancelled {
-  background-color: #f8d7da;
-  color: #721c24;
-}
-
-/* Order table */
-.order-card table {
-  width: 100%;
-  margin-top: 1rem;
-  border-collapse: collapse;
-  background: #fff;
+/* Status Dropdown */
+.orders-page select {
+  padding: 10px 16px;
   border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.03);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: #333;
+  outline: none;
 }
 
-.order-card th,
-.order-card td {
-  padding: 12px 15px;
-  text-align: center;
-  border-bottom: 1px solid #eee;
+/* Order Item Box */
+.order-item {
+  list-style: none;
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
 }
 
-.order-card th {
-  background: #f1f1f1;
-  color: #444;
-  font-weight: bold;
-}
-
-/* Order date (optional) */
-.order-date {
-  font-size: 0.9rem;
-  color: #6c757d;
-  margin-bottom: 0.5rem;
-}
-
-/* HR between orders */
-.order-card hr {
-  margin-top: 1.5rem;
+/* Order Buttons */
+.order-item button {
+  padding: 8px 14px;
   border: none;
-  border-top: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* Cancel Button */
+.order-item button:first-of-type {
+  background-color: #e53935;
+}
+.order-item button:first-of-type:hover {
+  background-color: #c62828;
+}
+
+/* Complete Button */
+.order-item button:nth-of-type(2) {
+  background-color: #4caf50;
+}
+.order-item button:nth-of-type(2):hover {
+  background-color: #388e3c;
+}
+
+/* Pagination Section */
+.orders-page > div:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 15px;
+}
+
+.orders-page > div:last-child button {
+  padding: 10px 20px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.orders-page > div:last-child button:hover:not(:disabled) {
+  background-color: #0d47a1;
+}
+
+.orders-page > div:last-child button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.orders-page > div:last-child span {
+  font-weight: bold;
 }
