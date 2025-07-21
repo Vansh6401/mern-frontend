@@ -67,3 +67,11 @@
   padding-top: 15px;
   opacity: 0.8;
 }
+
+.footer-logo {
+  width: 60px;       /* Adjust size */
+  height: 60px;      /* Keep it square */
+  border-radius: 50%; /* Make it circular */
+  object-fit: cover; /* Crop if needed */
+  margin-bottom: 10px;
+}
