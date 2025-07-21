@@ -1,5 +1,21 @@
-/* Full background */
+/* Ensure full page height and proper centering */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 .App-Login-Row {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(196deg, rgba(18, 6, 64, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* Full background */
+/* .App-Login-Row {
   background: linear-gradient(196deg, rgba(18, 6, 64, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
   min-height: 100vh;
   display: flex;
@@ -7,7 +23,7 @@
   justify-content: center;
   font-family: 'Segoe UI', sans-serif;
   padding: 30px;
-}
+} */
 
 /* Centered card */
 .login-form-card {
