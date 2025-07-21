@@ -23,12 +23,13 @@ body {
 .profile-card {
   background: rgba(255, 255, 255, 0.15);
   /* backdrop-filter: blur(10px); */
-  padding: 2rem;
+  padding: 3rem 2.5rem; /* Increased padding */
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  width: 350px;
+  width: 450px; /* Increased from 350px */
   text-align: center;
 }
+
 
 .profile-card h3 {
   margin-bottom: 20px;
