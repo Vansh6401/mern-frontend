@@ -29,7 +29,7 @@ export default function Product() {
     }
   };
   return (
-    <div className="product-list">
+    <div className="product-page">
       {products &&
         products.map((product) => (
           <div key={product._id}>
